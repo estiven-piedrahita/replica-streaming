@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(#181718,#000000fb);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* nav */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.788);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.747),
+        rgba(0, 0, 0, 0)
+    );
+}
+.nav img{
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.btn-exit{
+    text-decoration: none;
+    padding: 10px 50px 10px 50px;
+    background-color: #ffffffea;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: 20px;
+    
+}
+
+
+.container {
+    width: 320px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginForm input {
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 10px;
+    background-color: #111;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 9px;
+}
+#loginForm label{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+#loginForm button {
+    padding: 10px;
+    background-color: #ffffffe1;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#loginForm button:hover {
+    background-color: #d8d7da;
+    transform: translateY(2px);
+}
+
+
+#message {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
