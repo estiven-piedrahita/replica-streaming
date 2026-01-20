@@ -29,11 +29,9 @@ form.addEventListener("submit", (e)=> {
     p.style.color = "green"
 
     setTimeout(() => {
-    window.location.href = "home.html";
+    window.location.href = "profiles.html";
 }, 1000);
-
 });
-
 
 
 

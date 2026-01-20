@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>HBO Max Clone</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 <body>
 
     <nav class="nav">
         <div class="nav-links">
         <img src="./IMG/hbomax25_-_min_-_resized.png" alt="">
-        <button class="nav-btn">PELICULAS</button>
+        <button class="nav-btn" id="mostrar">PELICULAS</button>
         <button class="nav-btn">SERIES DE TV</button>
         <button class="nav-btn">NIÑOS Y FAMIALIA</button>
         <button class="nav-btn">MARCAS</button>
         <button class="nav-btn">EPISODIOS GRATIS</button>
-
         </div>
 
         <div class="nav-regis">
@@ -24,9 +25,51 @@
         </div>
     </nav>
 
+    <section class="active gap-3" id="container-card">
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 13rem;">
+                    <img src="./IMG/images (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>TOY STORY 4</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 13rem;">
+                    <img src="./IMG/descarga (2).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>SHUTTER ISLAND</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 12rem;">
+                    <img src="./IMG/En busca de la felicidad.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>IN SEARCH OF HAPPINESS</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 12rem;">
+                    <img src="./IMG/spiderman.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>SPIDER-MAN</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
     <section class="landing">
-        
         <div class="landing-content">
         <img src="./IMG/mob.avif" alt="">
         <p>Plans start at $18,900/month..</p>
@@ -38,5 +81,6 @@
         </div>
     </section>
 
+    <script src="./JS/script_landing.js"></script>
 </body>
 </html>

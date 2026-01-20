@@ -181,3 +181,31 @@ body {
 .landing-buttons a:hover{
   background-color: #ffffff9f;
 }
+
+
+/* card */
+
+.card{
+  max-height: 50rem;
+  
+
+}
+.card-body{
+  background-color: #000000;
+}
+.card h1{
+  font-size: 10px;
+  margin-left: 50px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.active{
+  display: none;
+}
+.oculto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000000;
+}
