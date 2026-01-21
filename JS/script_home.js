@@ -10,7 +10,8 @@ const catalog = [
     { titulo: "Gladiator", año: 2000, img: "img_catalogo/gladiator.jpg" },
     { titulo: "Fight Club", año: 1999, img: "img_catalogo/Fight Club.jpg" },
     { titulo: "John Wick", año: 2014, img: "img_catalogo/jhon wick.jpg" },
-    { titulo: "The Lord of the Rings", año: 2001, img: "img_catalogo/the lord of the rings.jpg" }
+    { titulo: "The Lord of the Rings", año: 2001, img: "img_catalogo/the lord of the rings.jpg" },
+    { titulo: "The Pursuit Of Happyness", año: 2006, img: "IMG/En busca de la felicidad.jpg" }
 ];
 
 
@@ -20,17 +21,16 @@ catalog.forEach(movie =>{
 
     const theDiv = document.createElement("div");
     theDiv.classList.add("card");
-    theDiv.style.width = "100%";
 
     theDiv.innerHTML =`
         <img src="${movie.img}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h2>${movie.titulo}</h2>
-            <h2>${movie.año}</h2>
+            <h2 class ="title">${movie.titulo}</h2>
+            <h2 class="year">${movie.año}</h2>
         </div>
     `
 
-    let catalogo = document.getElementById("mio")
+    let catalogo = document.getElementById("catalogo")
     catalogo.appendChild(theDiv)
 }
 
