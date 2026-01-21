@@ -181,14 +181,9 @@ body {
 .landing-buttons a:hover{
   background-color: #ffffff9f;
 }
-
-
 /* card */
-
 .card{
   max-height: 50rem;
-  
-
 }
 .card-body{
   background-color: #000000;

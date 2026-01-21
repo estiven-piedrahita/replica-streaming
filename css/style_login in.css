@@ -59,11 +59,11 @@ body {
 }
 
 
-.container {
+.the_container {
     width: 320px;
 }
 
-.container h2 {
+.the_container h2 {
     margin-bottom: 20px;
     text-align: center;
     font-weight: 700;
