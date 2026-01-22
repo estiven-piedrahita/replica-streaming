@@ -1,4 +1,9 @@
 
+
+if (sessionStorage.getItem("login") !== "true"){
+    window.location.href = "login.html";
+}
+
 const catalog = [
     { titulo: "The Dark Knight", año: 2008, img: "img_catalogo/The Dark Knight (2008).jpg" },
     { titulo: "Inception", año: 2010, img: "img_catalogo/Inception.jpg" },
@@ -32,8 +37,7 @@ catalog.forEach(movie =>{
 
     let catalogo = document.getElementById("catalogo")
     catalogo.appendChild(theDiv)
-}
+});
 
-)
 
 

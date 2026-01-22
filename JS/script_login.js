@@ -1,3 +1,7 @@
+if (sessionStorage.getItem("login") === "true") {
+    window.location.href = "home.html"
+}
+
 let form = document.getElementById("loginForm");
 let inputEmail = document.getElementById("Email");
 let password = document.getElementById("password");
@@ -21,13 +25,14 @@ form.addEventListener("submit", (e)=> {
         form.reset();
         return;
     }
-
+    sessionStorage.setItem("login", "true");  
 
     localStorage.setItem("loggedUser", JSON.stringify(userFound));
     
     p.textContent = "Login successful";
     p.style.color = "green"
 
+    
     setTimeout(() => {
     window.location.href = "profiles.html";
 }, 1000);
